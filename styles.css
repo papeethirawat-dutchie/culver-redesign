@@ -96,6 +96,11 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.demo-card:hover {
+  background: #FDF3D7;
 }
 
 .demo-card-text {
