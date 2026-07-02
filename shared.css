@@ -1,0 +1,62 @@
+/* Shared primary nav — used by index.html and retail-demo-west.html.
+   Page-specific stylesheets only override background/position as needed:
+   homepage keeps it transparent (floats over the hero photo), retail-west
+   gives it a solid background since there's no hero photo behind it. */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 80px;
+}
+
+.logo img { display: block; }
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.links a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.links a.active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Shared footer — identical on both pages, no overrides needed. */
+.footer {
+  background: #1A2E22;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17.7px;
+  letter-spacing: -0.35px;
+  color: #F1E8D6;
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #F1E8D6;
+}
+
+.footer-logo {
+  opacity: 0.9;
+}

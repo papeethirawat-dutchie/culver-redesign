@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Culver Cannabis Club — Retail Demo West</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="retail-demo-west.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="logo">
+    <img src="assets/culver-script-logo.svg" alt="Culver Cannabis Club" width="200" height="40">
+  </a>
+  <nav class="links">
+    <a href="index.html">Home</a>
+    <a href="retail-demo-west.html" class="active">Retail Demo - West</a>
+    <a href="#">Retail Demo - East</a>
+    <a href="#">Delivery Demo</a>
+    <a href="#">Dynamic Delivery Demo</a>
+  </nav>
+</header>
+
+<div class="secondary-nav">
+  <div class="secondary-nav-left">
+    <a href="#">Home</a>
+    <a href="#">Shop <span class="chevron">▾</span></a>
+    <a href="#">Hands</a>
+    <a href="#">Specials</a>
+    <button class="search-btn">
+      <svg width="12" height="12" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="7" stroke="#1A1A1A" stroke-width="1.6"/><path d="M14.5 14.5L18 18" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Search
+    </button>
+  </div>
+  <div class="secondary-nav-right">
+    <div class="status-item">
+      <svg width="13" height="13" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#2D5010" stroke-width="1.6"/><path d="M10 9v5M10 6.5v.01" stroke="#2D5010" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <span><strong class="status-open">OPEN</strong><br>Delivery + Pickup</span>
+    </div>
+    <div class="status-item">
+      <span><strong>MENU</strong><br>Recreational</span>
+    </div>
+    <a href="#" class="login-link">
+      <svg width="13" height="13" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="#1A1A1A" stroke-width="1.6"/><path d="M3.5 17c1-3.5 4-5 6.5-5s5.5 1.5 6.5 5" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Login
+    </a>
+    <button class="cart-btn">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7h10l-1 10H6L5 7Z" stroke="#1A1A1A" stroke-width="1.5" stroke-linejoin="round"/><path d="M7.5 7V5.5a2.5 2.5 0 0 1 5 0V7" stroke="#1A1A1A" stroke-width="1.5"/></svg>
+      <span class="cart-badge">0</span>
+    </button>
+  </div>
+</div>
+
+<section class="carousel" id="carousel">
+  <div class="carousel-frame">
+    <div class="carousel-track">
+      <img src="assets/retail-west/carousel/slide-1-rewards.png" class="carousel-slide active" alt="Join the club and start earning rewards">
+      <img src="assets/retail-west/carousel/slide-2-ai.png" class="carousel-slide" alt="Catch every call, chat, cart and review with One AI">
+      <img src="assets/retail-west/carousel/slide-3-paybybank.png" class="carousel-slide" alt="Pay the easy way with Pay by Bank">
+    </div>
+    <button class="carousel-arrow prev" onclick="moveSlide(-1)">‹</button>
+    <button class="carousel-arrow next" onclick="moveSlide(1)">›</button>
+  </div>
+  <div class="carousel-dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+</section>
+
+<section class="section categories">
+  <div class="section-header">
+    <h2>Categories</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="categories-row">
+    <img src="assets/retail-west/categories/flower.svg" alt="Flower">
+    <img src="assets/retail-west/categories/edibles.svg" alt="Edibles">
+    <img src="assets/retail-west/categories/vapes.svg" alt="Vapes">
+    <img src="assets/retail-west/categories/pre-rolls.svg" alt="Pre-Rolls">
+    <img src="assets/retail-west/categories/concentrates.svg" alt="Concentrates">
+    <img src="assets/retail-west/categories/topicals.svg" alt="Topicals">
+    <img src="assets/retail-west/categories/gear.svg" alt="Gear">
+    <img src="assets/retail-west/categories/tinctures.svg" alt="Tinctures">
+    <img src="assets/retail-west/categories/accessories.svg" alt="Accessories">
+  </div>
+</section>
+
+<section class="rewards-banner">
+  <div class="rewards-text">
+    <p class="rewards-title"><span class="icon-sparkle">✦</span> Rewards and personalization in one seamless experience.</p>
+    <p class="rewards-subtitle">Enjoy personalized recommendations, faster checkout, and earn points with every purchase.</p>
+  </div>
+  <div class="rewards-actions">
+    <button class="btn-social"><span class="g-icon">G</span> Continue with Google</button>
+    <button class="btn-social">
+      <svg width="14" height="14" viewBox="0 0 384 512" fill="#4A2040"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+      Continue with Apple
+    </button>
+    <a href="#" class="login-email">Log in or sign up with email</a>
+  </div>
+</section>
+
+<section class="section product-row">
+  <div class="section-header">
+    <div>
+      <p class="eyebrow-label">Curated Selection</p>
+      <h2>The Culver Collection 🍃</h2>
+    </div>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="product-cards-row">
+    <div class="product-card">
+      <img src="assets/retail-west/products/culver-collection-dark-choc-wafer-bites.png" alt="Dark Chocolate Wafer Bites">
+      <div class="product-footer"><span class="price">$28.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/culver-collection-pre-packed-flower.png" alt="Pre-Packed Cannabis Flower">
+      <div class="product-footer"><span class="price">$45.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/culver-collection-white-choc-chip-cookies.png" alt="White Choc Chip Cookies">
+      <div class="product-footer"><span class="price">$32.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/culver-collection-rso-dark-chocolate.png" alt="RSO Dark Chocolate">
+      <div class="product-footer"><span class="price">$38.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/culver-collection-hoodie.png" alt="Culver Club Hoodie">
+      <div class="product-footer"><span class="price">$65.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section specials-row">
+  <div class="section-header">
+    <h2>Specials</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="specials-cards-row">
+    <a class="special-card" href="#"><img src="assets/retail-west/specials/special-prerolls-10-for-40.png" alt="Select Pre-Rolls 10 for $40"></a>
+    <a class="special-card" href="#"><img src="assets/retail-west/specials/special-bogo-30-off.png" alt="BOGO 30% Off"></a>
+    <a class="special-card" href="#"><img src="assets/retail-west/specials/special-buy3-get1-free.png" alt="Buy 3 Get One Free"></a>
+  </div>
+</section>
+
+<section class="section product-row">
+  <div class="section-header">
+    <h2>Staff Picks</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="product-cards-row">
+    <div class="product-card">
+      <img src="assets/retail-west/products/staff-picks-cali-gold-hybrid.png" alt="Cali Gold Hybrid">
+      <div class="product-footer"><span class="price">$45.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/staff-picks-marionberry-gummies.png" alt="Marionberry Gummies">
+      <div class="product-footer"><span class="price">$22.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/staff-picks-era-life-vaporizer.png" alt="Era Life Vaporizer">
+      <div class="product-footer"><span class="price">$35.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/staff-picks-blue-dream-prerolls.png" alt="Blue Dream Pre-Rolls">
+      <div class="product-footer"><span class="price">$30.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/staff-picks-culver-club-hat.png" alt="Culver Club Hat">
+      <div class="product-footer"><span class="price">$25.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+  </div>
+</section>
+
+<a href="#" class="cta-banner-link">
+  <img src="assets/retail-west/cta-banner-connect.png" alt="See every insight. Take any action. Your AI powered command center.">
+</a>
+
+<section class="section product-row">
+  <div class="section-header">
+    <h2>Top Sellers</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="product-cards-row">
+    <div class="product-card">
+      <img src="assets/retail-west/products/top-sellers-inferno-og-preroll.png" alt="Inferno OG Pre-Roll">
+      <div class="product-footer"><span class="price">$18.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/top-sellers-culver-club-mug.png" alt="Culver Club Mug">
+      <div class="product-footer"><span class="price">$20.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/top-sellers-watermelon-cartridge.png" alt="Watermelon Cartridge">
+      <div class="product-footer"><span class="price">$55.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/top-sellers-blue-dream-pod.png" alt="Blue Dream Pod">
+      <div class="product-footer"><span class="price">$45.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/top-sellers-tahoe-og.png" alt="Tahoe OG">
+      <div class="product-footer"><span class="price">$38.00</span><button class="add-to-bag black">Add to Bag</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section product-row">
+  <div class="section-header">
+    <h2>Popular Vaporizers</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="product-cards-row">
+    <div class="product-card">
+      <img src="assets/retail-west/products/vaporizers-pax-3-device.png" alt="PAX 3 Device">
+      <div class="product-footer"><span class="price">$199.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/vaporizers-stiiizy-starter-kit.png" alt="Stiiizy Starter Kit">
+      <div class="product-footer"><span class="price">$35.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/vaporizers-yocan-uni-pro.png" alt="Yocan Uni Pro">
+      <div class="product-footer"><span class="price">$49.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/vaporizers-heavy-hitters-cartridge.png" alt="Heavy Hitters Cartridge">
+      <div class="product-footer"><span class="price">$55.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/vaporizers-jeeter-juice-live-resin.png" alt="Jeeter Juice Live Resin Cart">
+      <div class="product-footer"><span class="price">$45.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section product-row">
+  <div class="section-header">
+    <h2>Popular Concentrates</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="product-cards-row">
+    <div class="product-card">
+      <img src="assets/retail-west/products/concentrates-rosin.png" alt="Rosin">
+      <div class="product-footer"><span class="price">$60.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/concentrates-live-resin.png" alt="Live Resin">
+      <div class="product-footer"><span class="price">$50.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/concentrates-wax.png" alt="Wax">
+      <div class="product-footer"><span class="price">$40.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/concentrates-shatter.png" alt="Shatter">
+      <div class="product-footer"><span class="price">$45.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/concentrates-hash.png" alt="Hash">
+      <div class="product-footer"><span class="price">$30.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section product-row">
+  <div class="section-header">
+    <h2>Popular Edibles</h2>
+    <a href="#" class="view-all"><span class="view-all-text">View All</span> <span class="arrow-right">→</span></a>
+  </div>
+  <div class="product-cards-row">
+    <div class="product-card">
+      <img src="assets/retail-west/products/edibles-camino-gummies.png" alt="Camino Gummies">
+      <div class="product-footer"><span class="price">$18.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/edibles-strawberry-gummies.png" alt="Strawberry Gummies">
+      <div class="product-footer"><span class="price">$22.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/edibles-chocolate-bar.png" alt="Chocolate Bar">
+      <div class="product-footer"><span class="price">$24.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/edibles-cookie.png" alt="Cookie">
+      <div class="product-footer"><span class="price">$12.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+    <div class="product-card">
+      <img src="assets/retail-west/products/edibles-truffle.png" alt="Truffle">
+      <div class="product-footer"><span class="price">$40.00</span><button class="add-to-bag green">Add to Bag</button></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Follow</a>
+  </div>
+  <p class="footer-copyright">© 2026 Dutchie. All Rights Reserved.</p>
+  <img src="assets/culver-script-logo.svg" alt="Culver Cannabis Club" width="137" height="27" class="footer-logo">
+</footer>
+
+<script src="retail-demo-west.js"></script>
+</body>
+</html>

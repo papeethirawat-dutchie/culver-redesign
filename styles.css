@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 814px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px 80px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 46, 34, 0.376) 0%, rgba(26, 46, 34, 0.941) 100%);
+  z-index: 1;
+}
+
+/* Page-specific override: overlaid transparently on the hero photo
+   (horizontal padding comes from .hero's own padding, not the nav). */
+.nav {
+  position: relative;
+  z-index: 2;
+  padding: 32px 0;
+}
+
+.hero-body {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 86px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 843px;
+}
+
+.eyebrow {
+  font-weight: 600;
+  font-size: 14px;
+  color: #FBBC05;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.headline {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 341px));
+  gap: 16px;
+}
+
+.demo-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.demo-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.demo-card-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1A2E22;
+}
+
+.demo-card-subtitle {
+  font-family: 'Geist', 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #616161;
+}
+
+.demo-card-arrow {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* .footer / .footer-links / .footer-copyright / .footer-logo are in shared.css */
