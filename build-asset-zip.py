@@ -10,6 +10,10 @@ ROOT = Path(__file__).parent
 FILES = [
     "assets/culver-script-logo.svg",
     "assets/library/logo/culver-logo.png",
+    "assets/library/logo/culver-logo-stacked-dark.svg",
+    "assets/library/logo/culver-logo-stacked-dark.png",
+    "assets/library/logo/culver-logo-stacked-cream.svg",
+    "assets/library/logo/culver-logo-stacked-cream.png",
     "assets/hero.png",
     "assets/retail-west/carousel/slide-1-rewards.png",
     "assets/retail-west/carousel/slide-2-ai.png",
