@@ -45,9 +45,9 @@ FILES = [
     "assets/library/culver-collection/culver-club-hoodie.png",
     "assets/library/culver-collection/culver-club-hat.png",
     "assets/library/culver-collection/culver-club-mug.png",
-    "assets/retail-west/specials/special-prerolls-10-for-40.png",
-    "assets/retail-west/specials/special-bogo-30-off.png",
-    "assets/retail-west/specials/special-buy3-get1-free.png",
+    "assets/library/specials/special-prerolls-clean.png",
+    "assets/library/specials/special-bogo-clean.png",
+    "assets/library/specials/special-buy3-get1-free-clean.png",
 ]
 
 zip_path = ROOT / "assets/library/culver-redesign-assets.zip"
