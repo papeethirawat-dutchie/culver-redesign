@@ -1,6 +1,6 @@
 <svg width="80" height="109" viewBox="0 0 80 109" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" stroke="#E8E6E1"/>
 <path d="M29 24C29 22.8954 29.8954 22 31 22H49C50.1046 22 51 22.8954 51 24V52.5C51 53.3159 50.0672 53.7822 49.4142 53.2929L40.6 46.7C40.2444 46.4333 39.7556 46.4333 39.4 46.7L30.5858 53.2929C29.9328 53.7822 29 53.3159 29 52.5V24Z" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
-<path d="M43.7 33.4A4.5 4.5 0 1 0 43.7 38.6" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+<path d="M43.7 31.4A4.5 4.5 0 1 0 43.7 36.6" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
 <text x="40" y="107" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="7.3" letter-spacing="0.2" fill="#1A1A1A">CULVER CURATED</text>
 </svg>
