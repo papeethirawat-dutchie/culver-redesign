@@ -122,6 +122,19 @@ main {
   word-break: break-word;
 }
 
+.btn-group-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #9A9A9A;
+  margin-top: 2px;
+}
+
+.btn-group-label:first-of-type {
+  margin-top: 0;
+}
+
 .btn-download {
   display: inline-block;
   text-align: center;
