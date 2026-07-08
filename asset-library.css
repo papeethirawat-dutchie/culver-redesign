@@ -136,9 +136,11 @@ main {
 
 .btn-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
 .btn-row .btn-download {
   flex: 1;
+  min-width: 60px;
 }
